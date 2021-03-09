@@ -26,7 +26,7 @@ app.get('*', (req, res) => {
 
 async function start () {
   try{
-    await mongoose.connect('mongodb+srv://ivan:newpass@cluster0.rl5yg.mongodb.net/BikeRent?retryWrites=true&w=majority', {
+    await mongoose.connect(process.env.DB_CONNECT, {
       useNewUrlParser: true,
       useFindAndModify: false,
       useUnifiedTopology: true,
