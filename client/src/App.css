@@ -1,0 +1,13 @@
+body{
+  background-color: #e7e7e7;
+}
+
+.App > div {
+  font-family: Arial, serif;
+  margin: 0 auto 3rem;
+  width: 65%;
+}
+
+.content > .formContainer {
+  background-color: #ddd;
+}
