@@ -9,7 +9,6 @@ let app = express();
 
 let port = normalizePort(process.env.PORT || '9000');
 app.set('port', port);
-console.log(path.join(__dirname,"/../", "client", 'build'))
 
 app.use(logger('dev'));
 app.use(express.json());
