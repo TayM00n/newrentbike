@@ -31,7 +31,6 @@ const BlockNewBike = ()=>{
   const [state, setState] = useState(initState)
 
   const handleOnSubmit = async () => {
-    //await axios.get("/api/createNewBike", {title: "New Bike"})
     await axios.post("/api/createNewBike", {...state}).then(()=>window.location.reload(false)).catch(err =>alert(err.response.data.message))
   }
 
